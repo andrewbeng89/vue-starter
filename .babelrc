@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["env", { "modules": false }],
+    "stage-2",
+    "@ava/stage-4",
+    "@ava/transform-test-files"
+  ],
+  "plugins": ["transform-runtime"],
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": [ "istanbul" ]
+    }
+  }
+}
